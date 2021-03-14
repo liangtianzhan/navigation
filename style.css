@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body{
+background:rgb(255, 255, 255) url(./wall.jpg) no-repeat center ;
+background-size:cover;
+}
+main {
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+}
+kbd {
+  border: 1px solid red;
+  width: 4em;
+  height: 4em;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+}
+kbd > button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+kbd > img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+}
+kbd:hover > button {
+  display: inline-block;
+}
+kbd:hover > img {
+  display: inline-block;
+}
+#main > div:nth-child(2) {
+  margin-left: -40px;
+}
+#main > div:nth-child(3) {
+  margin-left: -140px;
+}
+.key{
+  width: 50px;
+  height: 40px;
+  background: linear-gradient(to bottom,#292929 0%,#111111 100%);
+  border:1px solid #3b3b3b;
+  color: #dddddd;
+  border-radius:4px;
+  box-shadow:0 0 0px 1px rgb(40, 43, 53),0 4px 0px 1px  rgb(40, 43, 53);
+  display: inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 10px;
+  font-size:20px;
+}
+.row {
+  margin-top: 30px;
+}
+
+.key img {
+  width: 16px;
+  height: 16px;
+}
